@@ -7,7 +7,6 @@ load_dotenv()
 api_key = os.getenv('ANTHROPIC_API_KEY')
 
 client = anthropic.Anthropic(
-    # defaults to os.environ.get("ANTHROPIC_API_KEY")
     api_key=api_key,
 )
 
